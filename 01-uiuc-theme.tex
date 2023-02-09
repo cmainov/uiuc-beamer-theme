@@ -1,0 +1,168 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% % Preamble %%%
+
+\documentclass{beamer}
+
+%% Code-chunk taken from: 
+%% https://github.com/illinois-r/uiucthemes/blob/main/inst/rmarkdown/templates/beamer_illinois/resources/template.tex %%
+
+\usetheme{AnnArbor}
+\setbeamercolor{frametitle}{fg=white,bg=blue}
+\usecolortheme{wolverine} 
+  
+ %redefined colors for beamer 
+ \definecolor{beamer@UIUCblue}{RGB}{29,38,57} 
+ \definecolor{beamer@UIUCorange}{RGB}{215,85,54} 
+ % taken from 
+ % http://identitystandards.illinois.edu/graphicstandardsmanual/generalguidelines/colors.html 
+  
+ \definecolor{beamer@UIUCgray}{RGB}{210,210,210} 
+ \definecolor{beamer@UIUCgray2}{RGB}{244,244,244} 
+  
+ \setbeamercolor{frametitle}{fg=beamer@UIUCblue,bg=beamer@UIUCgray} 
+ \setbeamercolor{normal text}{fg=black} 
+ \setbeamercolor{title}{fg=beamer@UIUCorange,bg=beamer@UIUCblue} 
+ \setbeamercolor{item projected}{fg=white,bg=beamer@UIUCorange} 
+  
+ % Boxes 
+ \setbeamercolor{block title}{fg=beamer@UIUCblue,bg=beamer@UIUCorange} 
+ \setbeamercolor{block body}{fg=blue,bg=beamer@UIUCblue!80} 
+ \setbeamercolor{title in head/foot}{fg=beamer@UIUCblue,bg=beamer@UIUCgray} 
+ \setbeamercolor{author in head/foot}{fg=white,bg=beamer@UIUCblue} 
+ \setbeamercolor{institute in head/foot}{fg=white,bg=beamer@UIUCorange} 
+ \setbeamercolor{date in head/foot}{fg=white,bg=beamer@UIUCorange} 
+ \setbeamercolor{section in head/foot}{fg=white,bg=beamer@UIUCblue} 
+ \setbeamercolor{subsection in head/foot}{fg=white,bg=beamer@UIUCorange} 
+
+
+%% end code chunk from  illinois-r/uiucthemes%%
+
+% logo for each slide to appear in bottom right hand corner (the paperwidth value controls horizontal % placement
+\logo{\includegraphics[scale=0.03]{images-logos/ilogo.png}\hspace*{.02\paperwidth}}
+
+% change table of contents bullet styles to circles instead of spheres (can also use `square` as well) %
+\setbeamertemplate{sections/subsections in toc}[circle]
+
+
+% % title page preamble %%
+\title
+[]{\Large title goes here}
+
+\author[footline]{name and credentials} % name in "[ ]" is what goes in  footline, the name in brackets is what goes on title page
+
+%% Institute name and U of I workmark %%
+\institute[]{\color{beamer@UIUCorange}Department Name Here \\ % use "[]" to not have the institute name on the footline
+\vspace{7px}
+\includegraphics[scale=0.034]{images-logos/iwordmark.png} } % note that the insertion  of the U of I 
+
+%  % workmark occurs within the \institute
+\date[]{\today} % "[]" removes the date from the footline
+
+%% end title page preamble %%
+
+%% add progress bar to footline %%
+\addtobeamertemplate{headline}{%
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,center]{section in head/foot}%
+     \insertsectionnavigationhorizontal{\paperwidth}{}{}
+  \end{beamercolorbox}}%
+
+}
+
+
+%% End of Preamble %%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%% Start of Document %%
+
+\begin{document}
+
+%% custom/local formatting of title slide %%
+{
+\setbeamertemplate{logo}{} % use of the preceding opening brace and this command removes logo % % from the title page
+
+% add U of I color banner to top of slide and remove progress navigation bar
+\setbeamertemplate{headline}{  
+  \begin{beamercolorbox}[ht=3ex,wd=1\textwidth]{section in head/foot}
+    \end{beamercolorbox} %
+   % redefine footline locally for title frame
+       \begin{beamercolorbox}[ht=3ex,wd=1\textwidth]{block title}
+    \end{beamercolorbox} 
+     \begin{beamercolorbox}[ht=2ex,wd=1\textwidth]{white}
+    \end{beamercolorbox} 
+}
+\begin{frame}
+
+\titlepage{}
+\end{frame}
+
+}
+
+
+% TOC %
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame}
+
+% Highlight section we are moving into %
+ \section{Introduction}
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents[currentsection]
+\end{frame}
+
+    \begin{frame}
+        \frametitle{Test}
+    \end{frame}
+    
+ \section{Literature Review}
+ \subsection{2.1}
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents[currentsection]
+\end{frame}
+
+    \begin{frame}
+        \frametitle{lit rev}
+    \end{frame}
+    
+    % Highlight section we are moving into %
+\section{Specific Aim 1}
+ \subsection{3.1}
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents[currentsection]
+\end{frame}
+       
+   
+    \begin{frame}
+        \frametitle{some stuff}
+    \end{frame}
+    
+    
+% Highlight section we are moving into %
+\section{Specific Aim 2}
+ \subsection{4.1}
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents[currentsection]
+\end{frame}
+       
+  
+    \begin{frame}
+        \frametitle{more stuff}
+    \end{frame}
+
+     
+\end{document}
+
+%% End of Document %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
