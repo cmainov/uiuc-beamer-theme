@@ -1,6 +1,6 @@
 # uiuc-beamer-theme
  UIUC Colors and Logos for Beamer Slide Deck
- Code adopted from `illinois-r/uiucthemes` by `Coatless` and formatted for `LaTeX`.
+ Code adopted from `illinois-r/uiucthemes` by `Coatless` and formatted for `beamer` presentation slides in `LaTeX`.
  
  ## Instructions:
  * Accessing and typesetting this file will require having. `TeX` distribution system installed on your machine.
@@ -12,4 +12,4 @@
 
 Balamuta J (2020). _uiucthemes: 'R' 'Markdown' Themes  for 'UIUC' Documents and Presentations_. R package  version 0.3.1,  <https://CRAN.R-project.org/package=uiucthemes>
 
-* I do not own The University of Illinois at Urbana-Champaign logo and watermark, which belong to the University of Illinois at Urbana-Champaign and the Board of Trustees
+* I do not own The University of Illinois at Urbana-Champaign logo and watermark, which belong to the University of Illinois at Urbana-Champaign and the Board of Trustees.
