@@ -1,6 +1,6 @@
 # uiuc-beamer-theme
  UIUC Colors and Logos for Beamer Slide Deck
- Code adopted from `illinois-r/uiucthemes` by `Coatless` and formatted for `beamer` presentation slides in `LaTeX`.
+ Code adopted from `illinois-r/uiucthemes` and formatted for `beamer` presentation slides in `LaTeX`.
  
  ## Instructions:
  * Accessing and typesetting this file will require having. `TeX` distribution system installed on your machine.
