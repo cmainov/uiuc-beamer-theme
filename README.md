@@ -7,4 +7,4 @@
  \item{Ensure that the `images-logos` folder is living within the same folder as the `.tex` file so that UIUC logos and wordmarks appear in the slides.}\\
  
  ##Credits
- \item{This LaTeX file was produces using code previously written by `coatless` in the `illinois-r/uiucthemes` \href{https://github.com/illinois-r/uiucthemes}{package}.}
+ \item{This LaTeX file was produces using code previously written by `coatless` in the `illinois-r/uiucthemes` [package](https://github.com/illinois-r/uiucthemes).
