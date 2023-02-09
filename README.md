@@ -7,4 +7,4 @@
 * Ensure that the `images-logos` folder is living within the same folder as the `.tex` file so that UIUC logos and wordmarks appear in the slides.
  
  ## Credits
-* This LaTeX file was produces using some code previously written by `coatless` in the `illinois-r/uiucthemes` [package](https://github.com/illinois-r/uiucthemes).
+* This `LaTeX` file was produced using repurposed code previously written by `coatless` in the `illinois-r/uiucthemes` [package](https://github.com/illinois-r/uiucthemes).
