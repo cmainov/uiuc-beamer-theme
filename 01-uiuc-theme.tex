@@ -27,8 +27,8 @@
  \setbeamercolor{item projected}{fg=white,bg=beamer@UIUCorange} 
   
  % Boxes 
- \setbeamercolor{block title}{fg=beamer@UIUCblue,bg=beamer@UIUCorange} 
- \setbeamercolor{block body}{fg=blue,bg=beamer@UIUCblue!80} 
+ \setbeamercolor{block title}{fg=beamer@UIUCorange,bg=beamer@UIUCblue} 
+ \setbeamercolor{block body}{fg=blue,bg=beamer@UIUCgray} 
  \setbeamercolor{title in head/foot}{fg=beamer@UIUCblue,bg=beamer@UIUCgray} 
  \setbeamercolor{author in head/foot}{fg=white,bg=beamer@UIUCblue} 
  \setbeamercolor{institute in head/foot}{fg=white,bg=beamer@UIUCorange} 
@@ -38,6 +38,15 @@
 
 
 %% end code chunk from  illinois-r/uiucthemes%%
+
+%% Bullet styles and colors %%
+\setbeamercolor{itemize item}{fg=beamer@UIUCorange}
+\setbeamercolor{itemize subitem}{fg=beamer@UIUCblue}
+\setbeamercolor{itemize subsubitem}{fg=beamer@UIUCblue}
+\setbeamertemplate{itemize item}{\tiny\raise1.25pt\hbox{\donotcoloroutermaths$\blacksquare$}}            % First level item
+\setbeamertemplate{itemize subitem}{\tiny\raise1.25pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}      % Second level item
+\setbeamertemplate{itemize subsubitem}{\tiny\raise1.25pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}   % Third level item
+
 
 % logo for each slide to appear in bottom right hand corner (the paperwidth value controls horizontal % placement
 \logo{\includegraphics[scale=0.03]{images-logos/ilogo.png}\hspace*{.02\paperwidth}}
