@@ -51,8 +51,11 @@
 % logo for each slide to appear in bottom right hand corner (the paperwidth value controls horizontal % placement
 \logo{\includegraphics[scale=0.03]{images-logos/ilogo.png}\hspace*{.02\paperwidth}}
 
-% change table of contents bullet styles to circles instead of spheres (can also use `square` as well) %
-\setbeamertemplate{sections/subsections in toc}[circle]
+
+% change table of contents bullet styles to circles instead of spheres (can also use `square` as well) % change subsections to numbered list and make the font size of subsections smaller
+\setbeamertemplate{section in toc}[circle]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+\setbeamerfont{subsection in toc}{size=\scriptsize}
 
 
 % % title page preamble %%
