@@ -3,7 +3,15 @@
 
 %% % Preamble %%%
 
-\documentclass{beamer}
+documentclass{beamer}
+
+%% Import BibTeX Database .bib file %%
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes, xpatch} % recommended
+\usepackage{filecontents}
+
+ \usepackage[english]{babel} % this fixes issue of et al.---bable needs to pass english as the language to the aux file
+
 
 %% Code-chunk taken from: 
 %% https://github.com/illinois-r/uiucthemes/blob/main/inst/rmarkdown/templates/beamer_illinois/resources/template.tex %%
@@ -84,6 +92,24 @@
 
 }
 
+
+%% Citations/bibtex
+\usepackage[style=authortitle,%
+            autocite=footnote,%
+             backend=bibtex8,%
+             ]{biblatex}
+\addbibresource{<bibfilenamehere>}
+
+% redefine command for foot cite-makes it smaller
+\newrobustcmd*{\footlessfullcite}{\AtNextCite{\renewbibmacro{title}{}\renewbibmacro{in:}{}\renewbibmacro{eng.}{}}\footfullcite}
+
+\AtEveryCitekey{\clearfield{pages}}  %get rid of pages from footnote citation
+\AtEveryCitekey{\clearfield{issn}} %get rid of issn from footnote citation
+\AtEveryCitekey{\clearfield{volume}} %get rid of volume from footnote citation
+\AtEveryCitekey{\clearfield{number}} %get rid of number from footnote citation
+\AtEveryCitekey{\clearlist{language}} %get rid of language from footnote citation (note \clearlist and note clearfield
+
+\setbeamerfont{footnote}{size=\tiny} %make citations tiny in the footnote
 
 %% End of Preamble %%
 
